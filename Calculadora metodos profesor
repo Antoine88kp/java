@@ -1,0 +1,32 @@
+public class Calculadora {
+
+    public static void main(String [] args){
+        int numero1 = 10;
+        int numero2 = 20;
+
+        int resultado = sumar(numero1, numero2);
+        int resultado2 = sumar(40, 50);
+        int resultado3 = sumar(60, 70);
+
+        escrbir(resultado);
+
+        escribir(resultado2);
+
+        escribir(resultado3);
+
+    }
+
+    public static int sumar(int n1, int n2){
+        int resultado = (n1 + n2);
+        return resultado;
+    }
+    public static int resta(int n1, int n2){
+        int resultado = (n1 - n2);
+        return resultado;
+    }
+    public static void escribir(resultado){
+        System.out.println("============================");
+        System.out.println("El resultado es" + resultado);
+        System.out.println("============================");
+    }
+}
